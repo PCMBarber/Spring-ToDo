@@ -23,7 +23,7 @@ pipeline {
 Description=My SpringBoot App
 
 [Service]
-User=ubuntu
+User=jenkins
 Type=simple
 
 ExecStart=/usr/bin/java -jar /home/jenkins/project-wars/project-'$build_num'.war
