@@ -23,8 +23,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                ssh -i ~/.ssh/id_rsa jenkins@35.178.16.249 << EOF
                 build_num=${BUILD_NUMBER}
+                ssh -i ~/.ssh/id_rsa jenkins@35.178.16.249 << EOF
                 echo '[Unit]
 Description=My SpringBoot App
 
